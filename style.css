@@ -1,38 +1,69 @@
+/* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
 }
+
+/* Cabeçalho */
 header {
     background: #007acc;
+    padding: 20px;
     color: #fff;
-    padding: 10px 20px;
-    text-align: center;
 }
-nav ul {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    list-style: none;
-    text-align: center;
+
+/* Botões */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 20px;
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
     color: #fff;
     text-decoration: none;
+    background: #007acc;
+    border: none;
+    border-radius: 15px; /* Bordas arredondadas */
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    width: 150px; /* Tamanho fixo para consistência */
 }
-main {
+
+.button:hover {
+    background: #005f99;
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Galeria de Imagens */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
     padding: 20px;
 }
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Zoom ao passar o mouse */
+}
+
+/* Rodapé */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
+    background: #222;
+    padding: 10px;
     color: #fff;
 }
